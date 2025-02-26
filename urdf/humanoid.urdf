@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="humanoid">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00146800173300426 0.000368098682734963 0.595271190932011"
+        rpy="0 0 0" />
+      <mass
+        value="6.59786730825667" />
+      <inertia
+        ixx="0.0243370746500142"
+        ixy="-9.00162307469399E-06"
+        ixz="-0.000508253254939784"
+        iyy="0.0454427141394048"
+        iyz="-0.00011010597761082"
+        izz="0.0310787957802052" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humanoid/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humanoid/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_fr_lt_wh">
+    <inertial>
+      <origin
+        xyz="-3.13824119468897E-09 0.00307634935980393 2.32166867597224E-06"
+        rpy="0 0 0" />
+      <mass
+        value="1.03988915130523" />
+      <inertia
+        ixx="0.00020925272867808"
+        ixy="5.88542377840665E-08"
+        ixz="5.62115286865014E-12"
+        iyy="0.000223869266689451"
+        iyz="-6.21612812508612E-10"
+        izz="0.000209178284317103" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humanoid/meshes/link_fr_lt_wh.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humanoid/meshes/link_fr_lt_wh.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_fr_lt_wh"
+    type="continuous">
+    <origin
+      xyz="-0.155 -0.1965 -0.09125"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_fr_lt_wh" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link_fr_rt_wh">
+    <inertial>
+      <origin
+        xyz="-8.99073366644743E-07 0.00301651511752311 -2.17228358682237E-06"
+        rpy="0 0 0" />
+      <mass
+        value="1.03988421354636" />
+      <inertia
+        ixx="0.000209238462488286"
+        ixy="5.48475076754617E-08"
+        ixz="-2.62028169110148E-08"
+        iyy="0.000223864333138709"
+        iyz="-2.20643166744823E-08"
+        izz="0.000209186121679234" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humanoid/meshes/link_fr_rt_wh.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humanoid/meshes/link_fr_rt_wh.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_fr_rt_wh"
+    type="continuous">
+    <origin
+      xyz="0.155 -0.1965 -0.09125"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_fr_rt_wh" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link_bk_lt_wh">
+    <inertial>
+      <origin
+        xyz="-8.70718303014328E-10 -0.00301651341478815 -2.29624377523995E-06"
+        rpy="0 0 0" />
+      <mass
+        value="1.03988184257683" />
+      <inertia
+        ixx="0.000209248588903058"
+        ixy="5.8614080647724E-08"
+        ixz="1.06662793586049E-12"
+        iyy="0.000223862834264278"
+        iyz="-6.04589301395144E-10"
+        izz="0.000209173683816729" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humanoid/meshes/link_bk_lt_wh.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humanoid/meshes/link_bk_lt_wh.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_bk_lt_wh"
+    type="continuous">
+    <origin
+      xyz="-0.155 0.1965 -0.09125"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_bk_lt_wh" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link_bk_rt_wh">
+    <inertial>
+      <origin
+        xyz="9.24219904385737E-07 -0.00307634702090553 2.22532756776676E-06"
+        rpy="0 0 0" />
+      <mass
+        value="1.03989176003312" />
+      <inertia
+        ixx="0.000209242884698713"
+        ixy="5.47361967549999E-08"
+        ixz="-2.58284575481405E-08"
+        iyy="0.000223871012325133"
+        iyz="-2.19742646218494E-08"
+        izz="0.000209190798833569" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humanoid/meshes/link_bk_rt_wh.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humanoid/meshes/link_bk_rt_wh.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_bk_rt_wh"
+    type="continuous">
+    <origin
+      xyz="0.155 0.1965 -0.09125"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_bk_rt_wh" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link_shld_lf">
+    <inertial>
+      <origin
+        xyz="-0.0391971732151668 0.00232115093642621 -0.0778718767219478"
+        rpy="0 0 0" />
+      <mass
+        value="0.559659567646006" />
+      <inertia
+        ixx="0.00190691954630906"
+        ixy="4.16798674197336E-07"
+        ixz="-1.39855384275073E-05"
+        iyy="0.00187128476296307"
+        iyz="4.73029978941524E-05"
+        izz="0.000285685128213519" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humanoid/meshes/link_shld_lf.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humanoid/meshes/link_shld_lf.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_shld_lf"
+    type="continuous">
+    <origin
+      xyz="-0.13 0 0.86193"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_shld_lf" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="link_arm_lt">
+    <inertial>
+      <origin
+        xyz="0.0172917915635735 -0.054921506475034 -0.060834841870972"
+        rpy="0 0 0" />
+      <mass
+        value="0.470361373137751" />
+      <inertia
+        ixx="0.00124124470458739"
+        ixy="-1.61328186733828E-05"
+        ixz="-1.78703227011096E-05"
+        iyy="0.000762203448557801"
+        iyz="-0.000483808267144904"
+        izz="0.000663086919854392" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humanoid/meshes/link_arm_lt.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humanoid/meshes/link_arm_lt.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_arm_lt"
+    type="continuous">
+    <origin
+      xyz="-0.0579999999999987 0.00551185515409525 -0.184917872183201"
+      rpy="0 0 0" />
+    <parent
+      link="link_shld_lf" />
+    <child
+      link="link_arm_lt" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="link_shld_rf">
+    <inertial>
+      <origin
+        xyz="0.0391971731983877 0.00276004508647409 -0.0778575562335012"
+        rpy="0 0 0" />
+      <mass
+        value="0.559659567665085" />
+      <inertia
+        ixx="0.00190691954861769"
+        ixy="-4.9576636265234E-07"
+        ixz="1.39829623774912E-05"
+        iyy="0.00187070093441012"
+        iyz="5.62401831169847E-05"
+        izz="0.000286268959006351" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humanoid/meshes/link_shld_rf.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humanoid/meshes/link_shld_rf.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_shld_rf"
+    type="continuous">
+    <origin
+      xyz="0.13 0 0.86193"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_shld_rf" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="link_arm_rt">
+    <inertial>
+      <origin
+        xyz="-0.0172917916000795 -0.0503916997843615 -0.0646368817874292"
+        rpy="0 0 0" />
+      <mass
+        value="0.470361371138522" />
+      <inertia
+        ixx="0.00124124470504008"
+        ixy="1.48026912304648E-05"
+        ixz="1.89867519350075E-05"
+        iyy="0.000831283748551062"
+        iyz="-0.000471647483050391"
+        izz="0.000594006622595301" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humanoid/meshes/link_arm_rt.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://humanoid/meshes/link_arm_rt.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_arm_rt"
+    type="continuous">
+    <origin
+      xyz="0.058 0.0065542 -0.18488"
+      rpy="0 0 0" />
+    <parent
+      link="link_shld_rf" />
+    <child
+      link="link_arm_rt" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+</robot>
